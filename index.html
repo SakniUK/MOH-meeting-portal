@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MOH Meeting Portal</title>
+<meta name="description" content="Book an official meeting with the Ministry of Health, State of Kuwait.">
+<link rel="icon" href="assets/moh-logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&family=Noto+Serif:wght@700&family=Noto+Naskh+Arabic:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="topbar">
+  <div class="wrap topbar-in">
+    <span id="today"></span>
+    <div class="topbar-links">
+      <span class="ar" lang="ar">العربية</span><span class="sep">|</span>
+      <span id="topAction"></span>
+    </div>
+  </div>
+</div>
+<header class="masthead">
+  <div class="wrap">
+    <a class="brand" href="#" data-act="home" aria-label="Ministry of Health, State of Kuwait – Meeting Portal home">
+      <img class="brand-emblem" src="assets/moh-emblem.png" alt="">
+      <span class="brand-text">
+        <span class="brand-ar" lang="ar">وزارة الصحة</span>
+        <span class="brand-name">Ministry of Health</span>
+        <span class="brand-sub">State of Kuwait <span class="brand-bar">|</span> <span lang="ar">دولة الكويت</span></span>
+      </span>
+    </a>
+  </div>
+</header>
+
+<main id="main" tabindex="-1"><div class="loading">Loading…</div></main>
+
+<footer class="footer">
+  <div class="wrap footer-in">
+    <div class="footer-top">
+      <span class="footer-name">Ministry of Health</span>
+      <div class="footer-links"><span>Privacy</span><span>Accessibility</span><span>Terms of use</span><span>Contact us</span></div>
+    </div>
+    <div class="footer-rule"></div>
+    <span class="footer-copy">© 2026 Ministry of Health, State of Kuwait.</span>
+  </div>
+</footer>
+
+<div id="overlay"></div>
+<div id="toast" role="status" aria-live="polite"></div>
+<script type="module" src="app.js"></script>
+</body>
+</html>
